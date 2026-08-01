@@ -102,7 +102,7 @@ def go(config: DictConfig):
             # step
 
             _ = mlflow.run(
-                os.path.join(hydra.utils.get_original_cwd(), "components", "train_val_test_split"),
+                os.path.join(hydra.utils.get_original_cwd(), "src", "train_random_forest"),
                 "main",
                 env_manager="conda",
                 parameters={
